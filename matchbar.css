@@ -25,6 +25,10 @@
   --status-indicator-color-negative: rgb(255, 77, 77);
   --status-indicator-color-negative-semi: rgba(255, 77, 77, .5);
   --status-indicator-color-negative-transparent: rgba(255, 77, 77, 0);
+	
+  --status-indicator-color-ready: rgb(255, 0, 255);
+  --status-indicator-color-ready-semi: rgba(255, 0, 255, .5);
+  --status-indicator-color-ready-transparent: rgba(255, 0, 255, 0);
 }
 
 @keyframes status-indicator-pulse {
@@ -55,6 +59,12 @@
   0%   { box-shadow: 0 0 0 0 var(--status-indicator-color-negative-semi); }
   70%  { box-shadow: 0 0 0 var(--status-indicator-size) var(--status-indicator-color-negative-transparent); }
   100% { box-shadow: 0 0 0 0 var(--status-indicator-color-negative-transparent); }
+}
+
+@keyframes status-indicator-pulse-ready {
+  0%   { box-shadow: 0 0 0 0 var(--status-indicator-color-ready-semi); }
+  70%  { box-shadow: 0 0 0 var(--status-indicator-size) var(--status-indicator-color-ready-transparent); }
+  100% { box-shadow: 0 0 0 0 var(--status-indicator-color-ready-transparent); }
 }
 
 status-indicator {
