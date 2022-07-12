@@ -26,9 +26,9 @@
   --status-indicator-color-negative-semi: rgba(255, 77, 77, .5);
   --status-indicator-color-negative-transparent: rgba(255, 77, 77, 0);
 	
-  --status-indicator-color-ready: rgb(255, 0, 255);
-  --status-indicator-color-ready-semi: rgba(255, 0, 255, .5);
-  --status-indicator-color-ready-transparent: rgba(255, 0, 255, 0);
+  --status-indicator-color-ready: rgb(0, 0, 255);
+  --status-indicator-color-ready-semi: rgba(0, 0, 255, .5);
+  --status-indicator-color-ready-transparent: rgba(0, 0, 255, 0);
 }
 
 @keyframes status-indicator-pulse {
@@ -118,4 +118,13 @@ status-indicator[negative] {
 
 status-indicator[negative][pulse] {
   animation-name: status-indicator-pulse-negative;
+}
+
+status-indicator[ready] {
+  background-color: var(--status-indicator-color-ready);
+  animation-name: status-indicator-pulse-ready;
+}
+
+status-indicator[ready][pulse] {
+  animation-name: status-indicator-pulse-ready;
 }
