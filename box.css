@@ -1,3 +1,6 @@
+body{
+    background: rgba(236, 235, 235, 0.6);
+}
 .box{
     position:absolute;
     /*定位方式绝对定位absolute*/
