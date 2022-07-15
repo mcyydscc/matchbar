@@ -47,3 +47,16 @@
 	padding: 0 10px;
 	outline: none;
 }
+
+
+.boxWrap1{width: 450px;height: 417px;position: relative;margin:0px auto;}
+.boxWrap1 img{width: 100%;}
+.boxWrap1 div{background: url(../img/banner.png) no-repeat;background-size: 450px auto; position: absolute; left: 0px;top: 0px;
+}
+.boxWrap1.set div{ opacity: 1!important;
+        transform:perspective(800px) translate3d(0px,0px,0px) rotate(0deg) scale(1)!important;
+        -moz-transform:perspective(800px) translate3d(0px,0px,0px) rotate(0deg) scale(1)!important;
+        -webkit-transform:perspective(800px) translate3d(0px,0px,0px) rotate(0deg) scale(1)!important;
+}
+.boxSiteWrap{ width: 100%;overflow: hidden;height: auto; padding: 140px 0}
+.boxSiteWrap button{cursor:pointer;display: block;font-size: 16px; width: 140px;height: 40px; background: #fff;color: #000;border:none;margin:30px auto;}
