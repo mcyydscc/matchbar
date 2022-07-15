@@ -1,0 +1,49 @@
+.box{
+    position:absolute;
+    /*定位方式绝对定位absolute*/
+    top:80%;
+    left:50%;
+    /*顶和高同时设置50%实现的是同时水平垂直居中效果*/
+    transform:translate(-50%,-50%);
+    /*实现块元素百分比下居中*/
+    width:900px;
+    padding:50px;
+    background: rgba(236, 235, 235, 0.6);
+    /*背景颜色为灰色，透明度为0.6*/
+    box-sizing:border-box;
+    /*box-sizing设置盒子模型的解析模式为怪异盒模型，
+    将border和padding划归到width范围内*/
+    box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+    /*边框阴影  水平阴影0 垂直阴影15px 模糊25px 颜色黑色透明度0.5*/
+    border-radius:15px;
+    /*边框圆角，四个角均为15px*/
+}
+.box h4{
+    margin:0 0 30px;
+    padding:0;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    /*文字居中*/
+}
+.box .me{
+	margin-left: 50px;
+	left:0;
+	right: 0;
+	text-align: left;
+	font-size: 16px;
+	height: 25px;
+	line-height: 25px;
+	color: rgb(0, 0, 0);
+}
+.box .info{
+	width: 144px;
+	margin-right: 20px;
+	margin-top: -45px;
+	height: 144px;
+	float: right;
+	background: url(../img/weixin.jpg)center center no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	padding: 0 10px;
+	outline: none;
+}
